@@ -79,9 +79,7 @@
             <p><strong><?php echo $data['adopter_id'] ?></strong> wants to adopt <strong><?php echo $data['pet_name'] ?></strong> listed by you.</p>
             <p>Do you want to approve their adoption request?</p>
         </div>
-        <div class="buttons">
-            <button class="button view" onclick="viewRequest()">View</button>
-            
+        <div class="buttons"> 
             <a href="/petmarket/requests?adoptionId=<?php echo $data['id']; ?>&petId=<?php echo $data['pet_id'] ?>&action=Approve">
             <button class="button approve" onclick="approveRequest()"><span class="icon">&#10004;</span> Approve</button>
             </a>
